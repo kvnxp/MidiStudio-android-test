@@ -1,32 +1,15 @@
 package com.midistudio;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.Color;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Message;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 
 import com.midistudio.structure.FileIO;
-import com.midistudio.structure.GlobalV;
 import com.midistudio.structure.MidiIO;
 import com.midistudio.structure.toast;
 
 public class Configuration extends Activity {
-
-
-
-
-    Button rtpbuttonstart;
-    Button rtpstatus;
-
     EditText newname;
 
     @Override
@@ -36,18 +19,7 @@ public class Configuration extends Activity {
         toast.context= getBaseContext();
         newname=(EditText)findViewById(R.id.filename);
 
-        if ( GlobalV.RtpMode){
-            rtpstatus.setBackgroundColor(Color.GREEN);
-            rtpstatus.setText("RTP: on");
-        }else {
-            rtpstatus.setBackgroundColor(Color.WHITE);
-            rtpstatus.setText("RTP: off");
-        }
-
-
-
     }
-
 
     public void save(View v){
 
@@ -71,38 +43,4 @@ public class Configuration extends Activity {
         MidiIO.sendControl(0,122,0);
 
     }
-
-    public void rtpstart (View v) {
-
-
-    }
-
-    void loadrtpspinner ()  {
-
-
-
-
-
-    }
-
-
-    public void rtpst(View v){
-        if ( GlobalV.RtpMode){
-            rtpstatus.setBackgroundColor(Color.WHITE);
-            rtpstatus.setText("RTP: off");
-            GlobalV.RtpMode=false;
-
-        }else {
-            rtpstatus.setBackgroundColor(Color.GREEN);
-            rtpstatus.setText("RTP: on");
-            GlobalV.RtpMode=true;
-
-
-        }
-
-    }
-
-
-
-
 }
