@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="controls_List">
+        <item>0 Bank Select (Controller # 32 more commonly used)</item>
+        <item>1 Modulation Wheel</item>
+        <item>2 Breath Contoller</item>
+        <item>3 Undefined</item>
+        <item>4 Foot Controller</item>
+        <item>5 Portamento Time</item>
+        <item>6 Data Entry MSB</item>
+        <item>7 Main Volume</item>
+        <item>8 Balance</item>
+        <item>9 Undefined</item>
+        <item>10 Pan</item>
+        <item>11 Expression</item>
+        <item>12 Effect Control 1</item>
+        <item>13 Effect Control 2</item>
+        <item>14 Undefined</item>
+        <item>16 General Purpose Controllers (Nos. 1-4)</item>
+        <item>17 General Purpose Controllers (Nos. 1-4)</item>
+        <item>18 General Purpose Controllers (Nos. 1-4)</item>
+        <item>19 General Purpose Controllers (Nos. 1-4)</item>
+        <item>20 Undefined</item>
+        <item>21 Undefined</item>
+        <item>22 Undefined</item>
+        <item>23 Undefined</item>
+        <item>24 Undefined</item>
+        <item>25 Undefined</item>
+        <item>26 Undefined</item>
+        <item>27 Undefined</item>
+        <item>28 Undefined</item>
+        <item>29 Undefined</item>
+        <item>30 Undefined</item>
+        <item>31 Undefined</item>
+        <item>32 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>33 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>34 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>35 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>36 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>37 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>38 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>39 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>40 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>41 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>42 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>43 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>44 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>45 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>46 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>47 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>48 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>49 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>50 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>51 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>52 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>53 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>53 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>54 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>55 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>56 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>57 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>58 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>59 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>60 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>61 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>62 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>63 LSB for Controllers 0-31 (rarely implemented)</item>
+        <item>64 Damper Pedal (Sustain) [Data Byte of 0-63=0ff, 64-127=On]</item>
+        <item>65 Portamento</item>
+        <item>66 Sostenuto</item>
+        <item>67 Soft Pedal</item>
+        <item>68 Legato Footswitch</item>
+        <item>69 Hold 2</item>
+        <item>70 Sound Variation</item>
+        <item>71 Timbre/Harmonic Content</item>
+        <item>72 Release Time</item>
+        <item>73 Attack Time</item>
+        <item>74 Brightness</item>
+        <item>75 Sound Controller 6-10 (no defaults)</item>
+        <item>76 Sound Controller 6-10 (no defaults)</item>
+        <item>77 Sound Controller 6-10 (no defaults)</item>
+        <item>78 Sound Controller 6-10 (no defaults)</item>
+        <item>79 Sound Controller 6-10 (no defaults)</item>
+        <item>80 General Purpose Controllers (Nos. 5-8)</item>
+        <item>81 General Purpose Controllers (Nos. 5-8)</item>
+        <item>82 General Purpose Controllers (Nos. 5-8)</item>
+        <item>83 General Purpose Controllers (Nos. 5-8)</item>
+        <item>84 Portamento Control</item>
+        <item>85 Undefined</item>
+        <item>86 Undefined</item>
+        <item>87 Undefined</item>
+        <item>88 Undefined</item>
+        <item>89 Undefined</item>
+        <item>90 Undefined</item>
+        <item>91 Effects 1 Depth (previously External Effects Depth)</item>
+        <item>92 Effects 2 Depth (previously Tremolo Depth)</item>
+        <item>93 Effects 3 Depth (previously Chorus Depth)</item>
+        <item>94 Effects 4 Depth (previously Detune Depth)</item>
+        <item>95 Effects 5 Depth (previously Phaser Depth)</item>
+        <item>96 Data Increment</item>
+        <item>97 Data Decrement</item>
+        <item>98 Non-Registered Parameter Number LSB</item>
+        <item>99 Non-Registered Parameter Number LSB</item>
+        <item>100 Registered Parameter Number LSB</item>
+        <item>101 Registered Parameter Number MSB</item>
+        <item>102 Undefined</item>
+        <item>103 Undefined</item>
+        <item>104 Undefined</item>
+        <item>105 Undefined</item>
+        <item>106 Undefined</item>
+        <item>107 Undefined</item>
+        <item>108 Undefined</item>
+        <item>109 Undefined</item>
+        <item>110 Undefined</item>
+        <item>111 Undefined</item>
+        <item>112 Undefined</item>
+        <item>113 Undefined</item>
+        <item>114 Undefined</item>
+        <item>115 Undefined</item>
+        <item>116 Undefined</item>
+        <item>117 Undefined</item>
+        <item>118 Undefined</item>
+        <item>119 Undefined</item>
+        <item>120 All Sound Off</item>
+        <item>121 Reset All Controllers</item>
+        <item>122 Local Control</item>
+        <item>123 All Notes Off</item>
+        <item>124 Omni Off</item>
+        <item>125 Omni On</item>
+        <item>126 Mono On (Poly Off)</item>
+        <item>127 Poly On (Mono Off)</item>
+    </array>
+
+</resources>

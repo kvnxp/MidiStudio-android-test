@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Layout_edit"
+    tools:context=".MidiStudio"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/namechanel"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:textColor="#ffffff" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newname"
+            android:layout_below="@+id/namechanel"
+            android:layout_toRightOf="@+id/namechanel"
+            android:width="200dp"
+            android:singleLine="true"
+            android:inputType="text" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editVolumeSeek"
+            android:indeterminate="false"
+            android:textAlignment="center"
+            android:maxWidth="500dp"
+            android:minWidth="300dp"
+            android:minHeight="60dp"
+            android:layout_alignTop="@+id/newname"
+            android:layout_centerHorizontal="true"
+            android:maxHeight="80dp"
+            android:max="127" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume:"
+            android:id="@+id/textView"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_alignRight="@+id/editVolumeSeek"
+            android:layout_alignLeft="@+id/editVolumeSeek"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="127"
+            android:id="@+id/editvolumetext"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_alignTop="@+id/editVolumeSeek"
+            android:layout_alignLeft="@+id/editVolumeSeek"
+            android:layout_alignRight="@+id/editVolumeSeek"
+            android:layout_alignBottom="@+id/editVolumeSeek" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sustain"
+            android:id="@+id/sustainBtn"
+            android:height="80dp"
+            android:width="100dp"
+            android:background="#ffffff"
+            android:onClick="sustain"
+            android:soundEffectsEnabled="false"
+            android:layout_below="@+id/namechanel"
+            android:layout_toRightOf="@+id/editVolumeSeek"
+            android:layout_toEndOf="@+id/editVolumeSeek"
+            android:layout_marginLeft="33dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="read program"
+            android:id="@+id/in_program"
+            android:layout_alignParentRight="true"
+            android:checked="false"
+            android:layout_alignTop="@+id/namechanel" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="read controls"
+            android:id="@+id/inbanks"
+            android:checked="false"
+            android:layout_alignLeft="@+id/in_program"
+            android:layout_below="@+id/in_program" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Tab"
+            android:id="@+id/mainTab"
+            android:width="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/controlsTab"
+            android:layout_toStartOf="@+id/controlsTab"
+            android:height="70dp"
+            android:tag="1"
+            android:background="#b6ffc4"
+            android:layout_margin="1dp"
+            android:onClick="tabSelect"
+            android:soundEffectsEnabled="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Controls Tab"
+            android:id="@+id/controlsTab"
+            android:tag="2"
+            android:width="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:height="70dp"
+            android:background="#ffffff"
+            android:layout_margin="1dp"
+            android:onClick="tabSelect"
+            android:soundEffectsEnabled="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Misc"
+            android:tag="3"
+            android:id="@+id/misctab"
+            android:width="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/controlsTab"
+            android:layout_toEndOf="@+id/controlsTab"
+            android:height="70dp"
+            android:background="#ffffff"
+            android:layout_margin="1dp"
+            android:onClick="tabSelect"
+            android:soundEffectsEnabled="false" />
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/main_tab" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/controls_tab"
+            android:layout_gravity="left|top" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/misc_tab"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
+
+</LinearLayout>
